@@ -14,7 +14,7 @@ for i, x in enumerate(CIFs):
     urlComp = baseUrl + cifNum + cifExt     
     finalUrl = "".join(urlComp)             # Assembles the final URL
     
-    if np.size(CIFs) > 60                   # Flood control, per crystallography.net API
+    if np.size(CIFs) > 60:                   # Flood control, per crystallography.net API
         time.sleep(10)                      # documentation for SQL queries
     
     # Name is pulled from the .cif information page
